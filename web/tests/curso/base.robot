@@ -2,14 +2,13 @@
 Library     SeleniumLibrary
 
 *** Variable ***
-${url}              https://homologacao.follownet.com.br/
+${url}              https://training-wheels-protocol.herokuapp.com/
 ${browser}          chrome
 
 *** Keywords ***
 Nova sessão
         Open Browser                    ${url}      ${browser}
-        Maximize Browser Window
 
 Encerra sessão
         Capture Page Screenshot
-        Close Browser                
+        Close Browser
